@@ -98,6 +98,13 @@ public class cardHolder
         {
             Console.WriteLine("Current balance: " + currentUser.getBalance());
         }
+
+        List<cardHolder> cardHolders = new List<cardHolder>();
+        cardHolders.Add(new cardHolder("6842151100005222", 1234, "John", "Jacobson", 150.65));
+        cardHolders.Add(new cardHolder("1234561584652849", 2586, "Steve", "Irkwin", 3336.15));
+        cardHolders.Add(new cardHolder("5491652199514321", 2489, "Mike", "Umani", 659.20));
+        cardHolders.Add(new cardHolder("1548623648856189", 9546, "Daniel", "Bowers", 634.12));
+        cardHolders.Add(new cardHolder("6659155231584674", 0024, "Jorge", "Washere", 888.88));
     }
 
 }
