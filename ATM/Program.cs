@@ -93,6 +93,11 @@ public class cardHolder
                 Console.WriteLine("Your transaction is complete. Thank you :");
             }
         }
+
+        void balance(cardHolder currentUser)
+        {
+            Console.WriteLine("Current balance: " + currentUser.getBalance());
+        }
     }
 
 }
