@@ -77,6 +77,22 @@ public class cardHolder
             currentUser.setBalance(deposit);                    //Balance should display current + added
             Console.WriteLine("Thank you for your deposit. Your new balance is: " +  currentUser.getBalance());
         }
+
+        void withdraw(cardHolder currentUser)
+        {
+            Console.WriteLine("How much money would you like to withdraw: ");
+            double withdrawal = Double.Parse(Console.ReadLine());
+            //check to make sure user has enough money
+            if (currentUser.getBalance() > withdrawal)
+            {
+                Console.WriteLine("Insufficient balance: ");
+            }
+            else
+            {
+                currentUser.setBalance(currentUser.getBalance() - withdrawal);
+                Console.WriteLine("Your transaction is complete. Thank you :");
+            }
+        }
     }
 
 }
