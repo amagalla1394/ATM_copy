@@ -58,4 +58,25 @@ public class cardHolder
         balance = newBalance;
     }
 
+    //Main method for running the ATM
+    public static void Main(String[] args)
+    {
+        void printOptions()
+        {
+            Console.WriteLine("Please choose from one of the following options...");
+            Console.WriteLine("1. Deposit");
+            Console.WriteLine("2. Withdraw");
+            Console.WriteLine("3. Show Balance");
+            Console.WriteLine("4. Exit");
+        }
+
+        void deposit(cardHolder currentUser)
+        {
+            Console.WriteLine("How much money would you like to deposit? ");
+            double deposit = Double.Parse(Console.ReadLine());  //TryCatch can later be added here
+            currentUser.setBalance(deposit);                    //Balance should display current + added
+            Console.WriteLine("Thank you for your deposit. Your new balance is: " +  currentUser.getBalance());
+        }
+    }
+
 }
