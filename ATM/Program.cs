@@ -20,43 +20,47 @@ public class cardHolder
     {
         return cardNum;
     }
-    public int getPin()
-    {
-        return pin;
-    }
-    public string getFirstName()
-    {
-        return firstName;
-    }
-    public string getLastName()
-    {
-        return lastName;
-    }
-    public double getBalance()
-    {
-        return balance;
-    }
-
     public void setNum(String newCardNum)
     {
         cardNum = newCardNum;
+    }
+
+    public int getPin()
+    {
+        return pin;
     }
     public void setPin(int newPin)
     {
         pin = newPin;
     }
+
+    public string getFirstName()
+    {
+        return firstName;
+    }
     public void setFirstName(String newFirstName)
     {
         firstName = newFirstName;
+    }
+
+    public string getLastName()
+    {
+        return lastName;
     }
     public void setLastName(String newLastName)
     {
         lastName = newLastName;
     }
+
+    public double getBalance()
+    {
+        return balance;
+    }
     public void setBalance(double newBalance)
     {
         balance = newBalance;
     }
+
 
     //Main method for running the ATM
     public static void Main(String[] args)
